@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Project 1</title>
+    <style>
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(253, 244, 233);
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .fourcol {
+            flex: 1;
+            padding: 10px;
+        }
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width:750px){
+            .row{
+                flex-flow: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Responsive Image Gallery</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </header>
+    <div class="row">
+        <div class="fourcol">
+            <img src="./1.jpg" alt="">
+            <img src="./2.jpg" alt="">
+            <img src="./3.jpg" alt="">
+            <img src="./4.jpg" alt="">
+            <img src="./5.jpg" alt="">
+            <img src="./6.jpg" alt="">
+            <img src="./7.jpg" alt="">
+        </div>
+        <div class="fourcol">
+            <img src="./8.jpg" alt="">
+            <img src="./9.jpg" alt="">
+            <img src="./10.jpg" alt="">
+            <img src="./11.jpg" alt="">
+            <img src="./12.jpg" alt="">
+            <img src="./8.jpg" alt="">
+        </div>
+        <div class="fourcol">
+            <img src="./1.jpg" alt="">
+            <img src="./2.jpg" alt="">
+            <img src="./3.jpg" alt="">
+            <img src="./4.jpg" alt="">
+            <img src="./5.jpg" alt="">
+            <img src="./6.jpg" alt="">
+            <img src="./7.jpg" alt="">
+        </div>
+        <div class="fourcol">
+            <img src="./8.jpg" alt="">
+            <img src="./9.jpg" alt="">
+            <img src="./10.jpg" alt="">
+            <img src="./11.jpg" alt="">
+            <img src="./12.jpg" alt="">
+            <img src="./8.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
